@@ -29,7 +29,7 @@
         const app = firebase.initializeApp(firebaseConfig)
         const messaging = firebase.messaging()
         // generate device token using public id
-        messaging.getToken({ vapidKey: "BHCFz00u--YbddbFLoSj1XBb_cMunkRhftYdXH-cU2SzXyduvQAdg7spp_pVG6ocxrdeoaDoKZ9MVGyiFkf6IuU" }).then((currentToken) => {
+        messaging.getToken({ vapidKey: "BLTN1Pv5aosuCQ1TYO5F3Z-fusRSMEHktVquSpvMZa0WoK_NXy4S3y63o4Rp1zte4Kw1plxd4dLI9PM4eFsgVrU" }).then((currentToken) => {
             if (currentToken) {
                 console.log(currentToken);
                 document.querySelector('body').append(currentToken)
